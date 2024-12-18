@@ -17,7 +17,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_APP_CLIENT_ID,
       clientSecret: process.env.GOOGLE_APP_CLIENT_SECRET,
-      callbackURL: process.env.REDIRECT_URL,
+      callbackURL: `https://jobfinder222.vercel.app`,
     },
     async function (accessToken, refreshToken, profile, cb) {
       let dataRaw = {
